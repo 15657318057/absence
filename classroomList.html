@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>教室管理</title>
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script> 
+    <style>
+    input[type=button]{
+    width: 108px;
+    height: 32px;
+    background:#7e9fe5; 
+    color: #fff;
+    border-radius: 6px;
+    border:1px solid #fff;
+    font-size: 16px;
+    margin-top: 5px;
+    padding-left: 20px;
+    }
+    .icon{
+      margin-left: -102px;
+      margin-top: -8px;
+    }
+    </style>
+</head>
+<body>
+<div class="layui-tab layui-tab-brief main-tab-container">
+    <ul class="layui-tab-title main-tab-title">
+      <div class="main-tab-item">教室列表</div>
+      <li><input type="button" style="margin-left: -20px;" value="添加教室" onclick="addClassroom()"><img class="icon" src="picture/add.png" width="17" height="17"></li>
+    </ul>
+    <div class="layui-tab-content">
+      <div class="layui-tab-item layui-show">
+      <form class="layui-form">
+            <table class="list-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>教室位置</th>
+                </tr>
+              </thead>
+              <tbody id="list">              
+              </tbody>
+            </table>
+      </form>
+      </div>
+    </div>
+</div>
+<script type="text/javascript"> 
+  $.ajax({
+    type:"get",
+    url:"Classroom.php",
+    dataType:"json",
+    success:function (data) {
+    $(data).each(
+      function (i, values) {
+      $("#list").html($("#list").html()
+          +"<tr><td>"+values.id+"</td>"
+          +"<td>"+values.roomname+"</td></tr>"
+      );
+    }
+  );
+},
+})
+function addClassroom(){
+  parent.addClassroom();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@charset "utf-8";
+body {
+  font-family: Consolas,Microsoft YaHei,sans-serif;
+  margin: 0;
+  background: #f3f7fa;
+}
+.head{
+  margin: 0 auto;
+  height: 40px; 
+  background: #739cf3;
+}
+ .navMenuBox{
+  width:200px;
+  height: 800px;
+  overflow:auto;
+  float:left;
+  background: #3f4b52;
+  }
+.content{
+  height: 800px;
+}
+span{
+  display: inline-block;
+  font-size: 14px;
+  color: #6962d9;
+  float: right;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.logout{
+  display: inline-block;
+  width: 36px;
+  height: 22px;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-left: 8px;
+}
+.navMenuBox ul,
+.navMenuBox li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.navMenu>li>a>img{
+  margin-left: 30px;
+}
+.navMenu>li>a {
+  display: block;
+  line-height: 50px;
+  font-size: 17px;
+  text-decoration: none;
+  color: #e3edf3;
+  border-bottom: 1px solid #bcc3c0;
+}
+.navMenu>li.active>a,
+.navMenu>li>a:hover,
+.subMenu>li.active>a,
+.subMenu>li>a:hover {
+  color: #FFF;
+  background: #516a7a;
+}
+.subMenu>li>a {
+  display: block;
+  line-height: 36px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #e3edf3;
+}
+ul.subMenu {
+  margin-top: 8px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+}
+.subMenu>li> a {
+  padding-left: 20px;
+}
+a.arrow:after {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  margin-top: 18px;
+  content: " ";
+  height: 8px;
+  width: 8px;
+  border-width: 2px 2px 0 0;
+  border-color: #e3edf3;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+li.active>a.arrow:after {
+    transform-origin: center;
+    transform: rotate(135deg);
+    transition: transform .2s;
+}
+  #cover{ 
+  display:none; 
+  position:fixed; 
+  z-index:1; 
+  top:0; 
+  left:0;
+  width:100%; 
+  height:100%;
+  background:rgba(0, 0, 0, 0.2); 
+  } 
+  #coverShow1,#coverShow2,#coverShow3{ 
+  display:none; 
+  position:fixed; 
+  z-index:2; 
+  top:5%; 
+  left:30%;
+  border-radius: 6px;
+  width:600px; 
+  height:500px; 
+  background: #fff;
+  border: 2px solid #bfd6ea;
+  } 

@@ -1,0 +1,61 @@
+/*公共样式*/
+.trans_3{transition: all 0.3s;
+-moz-transition: all 0.3s; /* Firefox 4 */
+-webkit-transition: all 0.3s; /* Safari 和 Chrome */
+-o-transition: all 0.3s; /* Opera */}
+.layui-main{width:auto;margin:15px;}
+.hide{display: none;} 
+.fill_5{clear:both;height: 5px;}
+.fill_10{clear:both;height: 10px;}
+.fill_20{clear:both;height: 20px;}
+.fill_50{clear:both;height: 50px;}
+.fill_100{clear:both;height: 100px;}
+.clear{clear:both;}
+
+/* 登陆页面 */
+.login_page{font-family: "open sans","Helvetica Neue",Helvetica,Arial,sans-serif;height:100%;text-align: center;padding-top: 40px}
+.login_page .logo-login{display: inline-block;width:250px;margin:0 auto;}
+.login_page h1{font-weight: 600;font-size: 16px;color: #676a6c;margin-bottom:20px;}
+.login_page .layui-form{width:300px;display: inline-block;margin:0 auto;}
+.layui-form-item .captcha{position: absolute;right:1px;top:1px;border-left: 1px solid #e6e6e6 }
+.layui-form-item .captcha img{height: 36px;cursor:pointer;}
+
+/*main页面头部tab标签*/
+.main-tab-title{padding-left: 160px;}
+.main-tab-title li{font-size: 12px;}
+.main-tab-title .main-tab-item{display: inline-block;vertical-align: middle;font-size: 14px;transition: all .3s;-webkit-transition: all .3s;position: absolute;line-height: 40px;min-width: 100px;padding: 0 10px;text-align: center;left: 10px;background: #5483ee;color:#fff;font-size:20px; }
+
+/*main页面内容*/
+.main-tab-container{position: relative;text-align: left;margin: 10px 0px;overflow: hidden;}
+
+/*表单*/
+.layui-form-item .input-custom-width{width:300px; }
+.layui-form-label{width: 100px}
+.layui-input-block{margin-left: 130px}
+.layui-form-mid{margin-left:130px;}
+.layui-form-mid:hover{color:#5483ee;}
+.layui-form-checkbox{margin-top: 0;margin-bottom: 10px;margin-right: 10px;}
+.layui-upload-button{position: absolute;right: 0;top:0;height: 38px;line-height: 38px;cursor: pointer;}
+.layui-upload-button .layui-upload-icon{cursor: pointer;}
+.layui-form-item .input-img-show{position: absolute;left:0;z-index: 10;max-height:200px;max-width: 300px; border:1px solid #5483ee;}
+
+
+/*列表table*/
+.list-table{width: 100%; margin: 10px 0;}
+.list-table thead{background-color:#f2f2f2; }
+.list-table tr{transition: all 0.3s;
+-moz-transition: all 0.3s; /* Firefox 4 */
+-webkit-transition: all 0.3s; /* Safari 和 Chrome */ 
+-o-transition: all 0.3s; /* Opera */}
+.list-table tr:nth-child(even){background: #fbfbfb;}
+.list-table tr:hover{background-color:#f8f8f8;}
+.list-table th{height: 24px}
+.list-table .can_click a{text-decoration: underline;}
+.list-table .can_click a:hover{color:#5483ee;}
+.list-table th, 
+.list-table td{padding: 6px 15px; line-height: 20px; border:1px solid #ddd; font-size: 14px; font-weight: 400;}
+.list-table td .layui-input{height: 30px;line-height: 30px}
+.list-table td .thumb{cursor:pointer;position: relative;width:16px;height: 16px;}
+.list-table td .thumb .thumb-show{position: absolute;left:30px;bottom:-13px;z-index: 10;max-height:150px;max-width: 300px; border:1px solid #5483ee;}
+.list-table td .link{cursor:pointer;}
+.list-table td .list-title:hover{color:#5483ee;}
